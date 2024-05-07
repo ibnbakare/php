@@ -58,6 +58,12 @@ prettyprint(($even));
     ["price"=>2.7,"qty"=>5,"desc"=> "item 4"],
  ];
 // you can start the sum by adding a value after the function
- $sum = array_reduce($invoiceItems,fn($sum,$item)=> $sum + $item['price'] + $item['qty']);
+ $sum = array_reduce($invoiceItems,fn($sum,$item)=> $sum + $item['price'] + $item['qty'],200);
 
  echo ($sum);
+
+
+/**
+ * sorting
+ * asort -> sorts by values and ksort sorts by keys
+ */
