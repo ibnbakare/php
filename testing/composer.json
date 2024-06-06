@@ -1,0 +1,19 @@
+{
+    "name": "ridhwan/namespace",
+    "type": "library",
+    
+    "authors": [
+        {
+            "name": "Ridhwan bakare",
+            "email": "ridmartrite@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "first\\": "first",
+            "testing\\second\\": "second"
+        }
+    }
+
+}
