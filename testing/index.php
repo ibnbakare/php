@@ -19,7 +19,7 @@ use testing\second\Transaction as see;
 
 
 
-$first = new Transaction();
+$first = new Transaction("Case");
 //you can use without calling an instance of the class
 //echo Transaction::STATUS_DECLINED;
 echo "<br>";
@@ -29,9 +29,13 @@ echo "<br>";
 //$first->setStatus($first::STATUS_DECLINED);
 echo $first->getStatus();
 echo "<br>";
-$first->setStatus("paid");
-echo "<br>";
-echo $first->getStatus();
+
+echo Transaction::getCount();
+// echo $first->amount;
+// echo $first->amount;
+// $first->setStatus("paid");
+// echo "<br>";
+// echo $first->getStatus();
 
 //echo $first-> handles();
 echo "<br>";
