@@ -12,11 +12,11 @@
 <?php
 $score = 90;
 ?>
-    <?php if($score >90): ?>
+    <?php if(false): ?>
     <strong>A</strong>
-    <?php elseif ($score >70): ?>
+    <?php elseif (true): ?>
     <strong>B</strong>
-    <?php elseif ($score > 60): ?>
+    <?php elseif (true): ?>
     <strong>C</strong>
     <?php else: ?>
     <strong>F</strong>

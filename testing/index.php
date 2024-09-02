@@ -16,33 +16,52 @@ require_once "./vendor/autoload.php";
 
 use first\Transaction;
 use testing\second\Transaction as see;
+use first\Status;
 
+use first\bmw;
 
+$Bmw = new bmw();
+$benz = new \first\benz();
 
-$first = new Transaction("Case");
-//you can use without calling an instance of the class
-//echo Transaction::STATUS_DECLINED;
+$Bmw->getMake();
 echo "<br>";
-echo $first::class;
-echo "<br>";
-//$first->setStatus($first::STATUS_DECLINED);
-//$first->setStatus($first::STATUS_DECLINED);
-echo $first->getStatus();
-echo "<br>";
+$benz->getModel();
 
-echo Transaction::getCount();
-// echo $first->amount;
-// echo $first->amount;
-// $first->setStatus("paid");
+
+
+
+
+
+
+// $firsts = new Transaction("Case");
+// $status = new Status("seen status");
 // echo "<br>";
+// $status->handles();
+// new Transaction("Cas");
+// new Transaction("Ca");
+// //you can use without calling an instance of the class
+// //echo Transaction::STATUS_DECLINED;
+// echo "<br>";
+// echo $first::class;
+// echo "<br>";
+// //$first->setStatus($first::STATUS_DECLINED);
+// //$first->setStatus($first::STATUS_DECLINED);
 // echo $first->getStatus();
+// echo "<br>";
 
-//echo $first-> handles();
-echo "<br>";
+// echo Transaction::getCount();
+// // echo $first->amount;
+// // echo $first->amount;
+// // $first->setStatus("paid");
+// // echo "<br>";
+// // echo $first->getStatus();
 
-$second = new see();
-    echo "<br>";
-echo $second->handle();
+// //echo $first-> handles();
+// echo "<br>";
+
+// $second = new see();
+//     echo "<br>";
+// echo $second->handle();
 
 
 ?>

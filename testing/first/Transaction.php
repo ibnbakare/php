@@ -3,7 +3,7 @@
 namespace first;
 
 use first\Status;
-class Transaction{
+class Transaction {
 
 
    private static int $count = 0;
@@ -16,8 +16,16 @@ class Transaction{
         $this->setStatus(Status::STATUS_DECLINED);
         $this::$count++;
     }
-
-    function handles()
+//   static method or property does not require the instance of a class
+//its assumed to be global and applies to all class not just a particular
+//instance
+public static function getCount():int
+{
+//    We use self keyword here because this is attached to an object
+//    while self is to a class so this wont work here
+    return self::$count;
+}
+   public function handles()
     {
         var_dump(Status::STATUS_PAID);
         echo "<br>";

@@ -1,9 +1,9 @@
 <?php
 
 namespace first;
+use first\Transaction;
 
-
-class Status
+class Status extends \first\Transaction
 {
 
     public const STATUS_PAID = "paid";
@@ -15,4 +15,5 @@ class Status
         self::STATUS_DECLINED => "Declined",
         self::STATUS_PENDING => "Pending"
     ];
+    
 }
